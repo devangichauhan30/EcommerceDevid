@@ -43,8 +43,9 @@
     <link rel="stylesheet" id="bg-switcher-css" href="assetsUser/css/backgrounds/bg-4.css">
     
 </head>
-<body class="shop_page">
+<body class="track_order_page">
     <div id="ec-overlay"><span class="loader_img"></span></div>
+
     <!-- Header start  -->
     <header class="ec-header">
         <!--Ec Header Top Start -->
@@ -353,7 +354,7 @@
                                         <li><a href="privacy-policy.php">Privacy Policy</a></li>
                                     </ul>
                                 </li>
-                                
+                               
                                 <li class="dropdown"><a href="blog-full-width.php">Blog</a>
                                 </li>
                                
@@ -603,13 +604,13 @@
                 <div class="col-12">
                     <div class="row ec_breadcrumb_inner">
                         <div class="col-md-6 col-sm-12">
-                            <h2 class="ec-breadcrumb-title">User Profile</h2>
+                            <h2 class="ec-breadcrumb-title">Track Order</h2>
                         </div>
                         <div class="col-md-6 col-sm-12">
                             <!-- ec-breadcrumb-list start -->
                             <ul class="ec-breadcrumb-list">
                                 <li class="ec-breadcrumb-item"><a href="index.php">Home</a></li>
-                                <li class="ec-breadcrumb-item active">Profile</li>
+                                <li class="ec-breadcrumb-item active">Track</li>
                             </ul>
                             <!-- ec-breadcrumb-list end -->
                         </div>
@@ -620,110 +621,51 @@
     </div>
     <!-- Ec breadcrumb end -->
 
-    <!-- User profile section -->
-    <section class="ec-page-content ec-vendor-uploads ec-user-account section-space-p">
-        <div class="container" >
-            <div class="row">
-                <!-- Sidebar Area Start -->
-                <div class="ec-shop-leftside ec-vendor-sidebar col-lg-3 col-md-12">
-                    <div class="ec-sidebar-wrap">
-                        <!-- Sidebar Category Block -->
-                        <div class="ec-sidebar-block">
-                            <div class="ec-vendor-block">
-                                <!-- <div class="ec-vendor-block-bg"></div>
-                                <div class="ec-vendor-block-detail">
-                                    <img class="v-img" src="assetsUser/images/user/1.jpg" alt="vendor image">
-                                    <h5>Mariana Johns</h5>
-                                </div> -->
-                                <div class="ec-vendor-block-items">
-                                    <ul>
-                                        <li><a href="user-profile.php">User Profile</a></li>
-                                        <li><a href="user-history.php">History</a></li>
-                                        <li><a href="wishlist.php">Wishlist</a></li>
-                                        <li><a href="cart.php">Cart</a></li>
-                                        <li><a href="checkout.php">Checkout</a></li>
-                                        <li><a href="track-order.php">Track Order</a></li>
-                                        <li><a href="user-invoice.php">Invoice</a></li>
-                                    </ul>
-                                </div>
-                            </div>
+    <!-- Ec Track Order section -->
+    <section class="ec-page-content section-space-p">
+        <div class="container">
+            <!-- Track Order Content Start -->
+            <div class="ec-trackorder-content col-md-12">
+                <div class="ec-trackorder-inner">
+                    <div class="ec-trackorder-top">
+                        <h2 class="ec-order-id">order #6152</h2>
+                        <div class="ec-order-detail">
+                            <div>Expected arrival 14-02-2021-2022</div>
+                            <div>Grasshoppers <span>v534hb</span></div>
                         </div>
                     </div>
-                </div>
-                <div class="ec-shop-rightside col-lg-9 col-md-12">
-                    <div class="ec-vendor-dashboard-card ec-vendor-setting-card">
-                        <div class="ec-vendor-card-body" >
-                            <div class="row" >
-                                <div class="col-md-12" >
-                                    <div class="ec-vendor-block-profile">
-                                        <div class="ec-vendor-block-img space-bottom-30">
-                                            <div class="ec-vendor-block-bg" >
-                                                <a href="#" class="btn btn-lg btn-primary"
-                                                    data-link-action="editmodal" title="Edit Detail"
-                                                    data-bs-toggle="modal" data-bs-target="#edit_modal">Edit Detail</a>
-                                            </div>
-                                            <div class="ec-vendor-block-detail">
-                                                <img class="v-img" src="assetsUser/images/user/Linda Morgus.jpg" alt="vendor image">
-                                                <h5 class="name">Mariana Johns</h5>
-                                                <p>( Business Man )</p>
-                                            </div>
-                                            <p>Hello <span>Mariana Johns!</span></p>
-                                            <p>From your account you can easily view and track orders. You can manage and change your account information like address, contact information and history of orders.</p>
-                                        </div>
-                                        <h5>Account Information</h5>
+                    <div class="ec-trackorder-bottom">
+                        <div class="ec-progress-track">
+                            <ul id="ec-progressbar">
+                                <li class="step0 active"><span class="ec-track-icon"> <img
+                                            src="assetsUser/images/icons/track_1.png" alt="track_order"></span><span
+                                        class="ec-progressbar-track"></span><span class="ec-track-title">order
+                                        <br>processed</span></li>
+                                <li class="step0 active"><span class="ec-track-icon"> <img
+                                            src="assetsUser/images/icons/track_2.png" alt="track_order"></span><span
+                                        class="ec-progressbar-track"></span><span class="ec-track-title">order
+                                            <br>designing</span></li>
+                                <li class="step0 active"><span class="ec-track-icon"> <img
+                                            src="assetsUser/images/icons/track_3.png" alt="track_order"></span><span
+                                        class="ec-progressbar-track"></span><span class="ec-track-title">order
+                                            <br>shipped</span></li>
+                                <li class="step0"><span class="ec-track-icon"> <img
+                                            src="assetsUser/images/icons/track_4.png" alt="track_order"></span><span
+                                        class="ec-progressbar-track"></span><span class="ec-track-title">order <br>enroute</span></li>
+                                <li class="step0"><span class="ec-track-icon"> <img
+                                            src="assetsUser/images/icons/track_5.png" alt="track_order"></span><span
+                                        class="ec-progressbar-track"></span><span class="ec-track-title">order
+                                            <br>arrived</span></li>
 
-                                        <div class="row">
-                                            <div class="col-md-6 col-sm-12">
-                                                <div class="ec-vendor-detail-block ec-vendor-block-email space-bottom-30">
-                                                    <h6>E-mail address <a href="javasript:void(0)" data-link-action="editmodal" title="Edit Detail" data-bs-toggle="modal" data-bs-target="#edit_modal"><img src="assetsUser/images/icons/edit.svg"
-                                                        class="svg_img pro_svg" alt="edit" /></a></h6>
-                                                    <ul>
-                                                        <li><strong>Email 1 : </strong>support1@exapmle.com</li>
-                                                        <li><strong>Email 2 : </strong>support2@exapmle.com</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6 col-sm-12">
-                                                <div class="ec-vendor-detail-block ec-vendor-block-contact space-bottom-30">
-                                                    <h6>Contact nubmer<a href="javasript:void(0)" data-link-action="editmodal" title="Edit Detail" data-bs-toggle="modal" data-bs-target="#edit_modal"><img src="assetsUser/images/icons/edit.svg"
-                                                        class="svg_img pro_svg" alt="edit" /></a></h6>
-                                                    <ul>
-                                                        <li><strong>Phone Nubmer 1 : </strong>(123) 123 456 7890</li>
-                                                        <li><strong>Phone Nubmer 2 : </strong>(123) 123 456 7890</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6 col-sm-12">
-                                                <div class="ec-vendor-detail-block ec-vendor-block-address mar-b-30">
-                                                    <h6>Address<a href="javasript:void(0)" data-link-action="editmodal" title="Edit Detail" data-bs-toggle="modal" data-bs-target="#edit_modal"><img src="assetsUser/images/icons/edit.svg"
-                                                        class="svg_img pro_svg" alt="edit" /></a></h6>
-                                                    <ul>
-                                                        <li><strong>Home : </strong>123, 2150 Sycamore Street, dummy text of
-                                                            the, San Jose, California - 95131.</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6 col-sm-12">
-                                                <div class="ec-vendor-detail-block ec-vendor-block-address">
-                                                    <h6>Shipping Address<a href="javasript:void(0)" data-link-action="editmodal" title="Edit Detail" data-bs-toggle="modal" data-bs-target="#edit_modal"><img src="assetsUser/images/icons/edit.svg"
-                                                        class="svg_img pro_svg" alt="edit" /></a></h6>
-                                                    <ul>
-                                                        <li><strong>Office : </strong>123, 2150 Sycamore Street, dummy text of
-                                                            the, San Jose, California - 95131.</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- Track Order Content end -->
         </div>
     </section>
-    <!-- End User profile section -->
+    <!-- End Track Order section -->
 
     <!-- Footer Start -->
     <footer class="ec-footer section-space-mt">
@@ -866,88 +808,103 @@
     <!-- Footer Area End -->
 
     <!-- Modal -->
-    <div class="modal fade" id="edit_modal" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
+    <div class="modal fade" id="ec_quickview_modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
+                <button type="button" class="btn-close qty_close" data-bs-dismiss="modal" aria-label="Close"></button>
                 <div class="modal-body">
                     <div class="row">
-                        <div class="ec-vendor-block-img space-bottom-30">
-                            <div class="ec-vendor-block-bg cover-upload">
-                                <div class="thumb-upload">
-                                    <div class="thumb-edit">
-                                        <input type='file' id="thumbUpload01" class="ec-image-upload"
-                                            accept=".png, .jpg, .jpeg" />
-                                        <label><img src="assetsUser/images/icons/edit.svg"
-                                                class="svg_img header_svg" alt="edit" /></label>
+                        <div class="col-md-5 col-sm-12 col-xs-12">
+                            <!-- Swiper -->
+                            <div class="qty-product-cover">
+                                <div class="qty-slide">
+                                    <img class="img-responsive" src="assetsUser/images/product-image/3_1.jpg" alt="">
+                                </div>
+                                <div class="qty-slide">
+                                    <img class="img-responsive" src="assetsUser/images/product-image/3_2.jpg" alt="">
+                                </div>
+                                <div class="qty-slide">
+                                    <img class="img-responsive" src="assetsUser/images/product-image/3_3.jpg" alt="">
+                                </div>
+                                <div class="qty-slide">
+                                    <img class="img-responsive" src="assetsUser/images/product-image/3_4.jpg" alt="">
+                                </div>
+                                <div class="qty-slide">
+                                    <img class="img-responsive" src="assetsUser/images/product-image/3_5.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="qty-nav-thumb">
+                                <div class="qty-slide">
+                                    <img class="img-responsive" src="assetsUser/images/product-image/3_1.jpg" alt="">
+                                </div>
+                                <div class="qty-slide">
+                                    <img class="img-responsive" src="assetsUser/images/product-image/3_2.jpg" alt="">
+                                </div>
+                                <div class="qty-slide">
+                                    <img class="img-responsive" src="assetsUser/images/product-image/3_3.jpg" alt="">
+                                </div>
+                                <div class="qty-slide">
+                                    <img class="img-responsive" src="assetsUser/images/product-image/3_4.jpg" alt="">
+                                </div>
+                                <div class="qty-slide">
+                                    <img class="img-responsive" src="assetsUser/images/product-image/3_5.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-7 col-sm-12 col-xs-12">
+                            <div class="quickview-pro-content">
+                                <h5 class="ec-quick-title"><a href="product-left-sidebar.php">Handbag leather purse for women</a>
+                                </h5>
+                                <div class="ec-quickview-rating">
+                                    <i class="ecicon eci-star fill"></i>
+                                    <i class="ecicon eci-star fill"></i>
+                                    <i class="ecicon eci-star fill"></i>
+                                    <i class="ecicon eci-star fill"></i>
+                                    <i class="ecicon eci-star"></i>
+                                </div>
+
+                                <div class="ec-quickview-desc">Lorem Ipsum is simply dummy text of the printing and
+                                    typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever
+                                    since the 1500s,</div>
+                                <div class="ec-quickview-price">
+                                    <span class="old-price">$100.00</span>
+                                    <span class="new-price">$80.00</span>
+                                </div>
+
+                                <div class="ec-pro-variation">
+                                    <div class="ec-pro-variation-inner ec-pro-variation-color">
+                                        <span>Color</span>
+                                        <div class="ec-pro-color">
+                                            <ul class="ec-opt-swatch">
+                                                <li><span style="background-color:#696d62;"></span></li>
+                                                <li><span style="background-color:#d73808;"></span></li>
+                                                <li><span style="background-color:#577023;"></span></li>
+                                                <li><span style="background-color:#2ea1cd;"></span></li>
+                                            </ul>
+                                        </div>
                                     </div>
-                                    <div class="thumb-preview ec-preview">
-                                        <div class="image-thumb-preview">
-                                            <img class="image-thumb-preview ec-image-preview v-img"
-                                                src="assetsUser/images/user/Linda Morgus.jpg" alt="edit" />
+                                    <div class="ec-pro-variation-inner ec-pro-variation-size ec-pro-size">
+                                        <span>Size</span>
+                                        <div class="ec-pro-variation-content">
+                                            <ul class="ec-opt-size">
+                                                <li class="active"><a href="#" class="ec-opt-sz"
+                                                        data-tooltip="Small">S</a></li>
+                                                <li><a href="#" class="ec-opt-sz" data-tooltip="Medium">M</a></li>
+                                                <li><a href="#" class="ec-opt-sz" data-tooltip="Large">X</a></li>
+                                                <li><a href="#" class="ec-opt-sz" data-tooltip="Extra Large">XL</a></li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="ec-vendor-block-detail">
-                                <div class="thumb-upload">
-                                    <div class="thumb-edit">
-                                        <input type='file' id="thumbUpload02" class="ec-image-upload"
-                                            accept=".png, .jpg, .jpeg" />
-                                        <label><img src="assetsUser/images/icons/edit.svg"
-                                                class="svg_img header_svg" alt="edit" /></label>
+                                <div class="ec-quickview-qty">
+                                    <div class="qty-plus-minus">
+                                        <input class="qty-input" type="text" name="ec_qtybtn" value="1" />
                                     </div>
-                                    <div class="thumb-preview ec-preview">
-                                        <div class="image-thumb-preview">
-                                            <img class="image-thumb-preview ec-image-preview v-img"
-                                                src="assetsUser/images/user/Linda Morgus.jpg" alt="edit" />
-                                        </div>
+                                    <div class="ec-quickview-cart ">
+                                        <button class="btn btn-primary"><img src="assetsUser/images/icons/cart.svg"
+                                                class="svg_img pro_svg" alt="" /> Add To Cart</button>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="ec-vendor-upload-detail">
-                                <form class="row g-3">
-                                    <div class="col-md-6 space-t-15">
-                                        <label class="form-label">First name</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <div class="col-md-6 space-t-15">
-                                        <label class="form-label">Last name</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <div class="col-md-12 space-t-15">
-                                        <label class="form-label">Address 1</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <div class="col-md-12 space-t-15">
-                                        <label class="form-label">Address 2</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <div class="col-md-12 space-t-15">
-                                        <label class="form-label">Address 3</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <div class="col-md-6 space-t-15">
-                                        <label class="form-label">Email id 1</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <div class="col-md-6 space-t-15">
-                                        <label class="form-label">Email id 2</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <div class="col-md-6 space-t-15">
-                                        <label class="form-label">Phone number 1</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <div class="col-md-6 space-t-15">
-                                        <label class="form-label">Phone number 2</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <div class="col-md-12 space-t-15">
-                                        <button type="submit" class="btn btn-primary">Update</button>
-                                        <a href="#" class="btn btn-lg btn-secondary qty_close" data-bs-dismiss="modal"
-                                            aria-label="Close">Close</a>
-                                    </div>
-                                </form>
                             </div>
                         </div>
                     </div>
@@ -1210,19 +1167,17 @@
     <script src="assetsUser/js/vendor/jquery-3.5.1.min.js"></script>
     <script src="assetsUser/js/vendor/popper.min.js"></script>
     <script src="assetsUser/js/vendor/bootstrap.min.js"></script>
-    <script src="assetsUser/js/vendor/bootstrap-tagsinput.js"></script>
     <script src="assetsUser/js/vendor/jquery-migrate-3.3.0.min.js"></script>
     <script src="assetsUser/js/vendor/modernizr-3.11.2.min.js"></script>
-    <script src="assetsUser/js/vendor/jquery.magnific-popup.min.js"></script>
 
     <!--Plugins JS-->
     <script src="assetsUser/js/plugins/swiper-bundle.min.js"></script>
-    <script src="assetsUser/js/plugins/nouislider.js"></script>
     <script src="assetsUser/js/plugins/countdownTimer.min.js"></script>
     <script src="assetsUser/js/plugins/scrollup.js"></script>
     <script src="assetsUser/js/plugins/jquery.zoom.min.js"></script>
     <script src="assetsUser/js/plugins/slick.min.js"></script>
     <script src="assetsUser/js/plugins/infiniteslidev2.js"></script>
+    <script src="assetsUser/js/vendor/jquery.magnific-popup.min.js"></script>
     <script src="assetsUser/js/plugins/jquery.sticky-sidebar.js"></script>
     <!-- Google translate Js -->
     <script src="assetsUser/js/vendor/google-translate.js"></script>
@@ -1232,6 +1187,7 @@
         }
     </script>
     <!-- Main Js -->
+    <script src="assetsUser/js/vendor/index.js"></script>
     <script src="assetsUser/js/main.js"></script>
 
 </body>

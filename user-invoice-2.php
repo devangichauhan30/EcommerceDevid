@@ -45,6 +45,7 @@
 </head>
 <body class="shop_page">
     <div id="ec-overlay"><span class="loader_img"></span></div>
+
     <!-- Header start  -->
     <header class="ec-header">
         <!--Ec Header Top Start -->
@@ -603,13 +604,13 @@
                 <div class="col-12">
                     <div class="row ec_breadcrumb_inner">
                         <div class="col-md-6 col-sm-12">
-                            <h2 class="ec-breadcrumb-title">User Profile</h2>
+                            <h2 class="ec-breadcrumb-title">User Invoice</h2>
                         </div>
                         <div class="col-md-6 col-sm-12">
                             <!-- ec-breadcrumb-list start -->
                             <ul class="ec-breadcrumb-list">
                                 <li class="ec-breadcrumb-item"><a href="index.php">Home</a></li>
-                                <li class="ec-breadcrumb-item active">Profile</li>
+                                <li class="ec-breadcrumb-item active">Invoice</li>
                             </ul>
                             <!-- ec-breadcrumb-list end -->
                         </div>
@@ -620,9 +621,9 @@
     </div>
     <!-- Ec breadcrumb end -->
 
-    <!-- User profile section -->
-    <section class="ec-page-content ec-vendor-uploads ec-user-account section-space-p">
-        <div class="container" >
+    <!-- User invoice section -->
+    <section class="ec-page-content ec-vendor-uploads ec-user-account ec-invoice-2 section-space-p">
+        <div class="container">
             <div class="row">
                 <!-- Sidebar Area Start -->
                 <div class="ec-shop-leftside ec-vendor-sidebar col-lg-3 col-md-12">
@@ -630,11 +631,6 @@
                         <!-- Sidebar Category Block -->
                         <div class="ec-sidebar-block">
                             <div class="ec-vendor-block">
-                                <!-- <div class="ec-vendor-block-bg"></div>
-                                <div class="ec-vendor-block-detail">
-                                    <img class="v-img" src="assetsUser/images/user/1.jpg" alt="vendor image">
-                                    <h5>Mariana Johns</h5>
-                                </div> -->
                                 <div class="ec-vendor-block-items">
                                     <ul>
                                         <li><a href="user-profile.php">User Profile</a></li>
@@ -651,66 +647,140 @@
                     </div>
                 </div>
                 <div class="ec-shop-rightside col-lg-9 col-md-12">
-                    <div class="ec-vendor-dashboard-card ec-vendor-setting-card">
-                        <div class="ec-vendor-card-body" >
-                            <div class="row" >
-                                <div class="col-md-12" >
-                                    <div class="ec-vendor-block-profile">
-                                        <div class="ec-vendor-block-img space-bottom-30">
-                                            <div class="ec-vendor-block-bg" >
-                                                <a href="#" class="btn btn-lg btn-primary"
-                                                    data-link-action="editmodal" title="Edit Detail"
-                                                    data-bs-toggle="modal" data-bs-target="#edit_modal">Edit Detail</a>
-                                            </div>
-                                            <div class="ec-vendor-block-detail">
-                                                <img class="v-img" src="assetsUser/images/user/Linda Morgus.jpg" alt="vendor image">
-                                                <h5 class="name">Mariana Johns</h5>
-                                                <p>( Business Man )</p>
-                                            </div>
-                                            <p>Hello <span>Mariana Johns!</span></p>
-                                            <p>From your account you can easily view and track orders. You can manage and change your account information like address, contact information and history of orders.</p>
-                                        </div>
-                                        <h5>Account Information</h5>
+                    <div class="ec-vendor-dashboard-card">
+                        <div class="ec-vendor-card-header">
+                            <h5>Invoice</h5>
+                            <div class="ec-header-btn">
+                                <a class="btn btn-lg btn-secondary" href="#">Print</a>
+                                <a class="btn btn-lg btn-primary" href="#">Export</a>
+                            </div>
+                        </div>
+                        <div class="ec-vendor-card-body padding-b-0">
+                            <div class="page-content">
+                                <div class="page-header text-blue-d2">
+                                    <img src="assetsUser/images/logo/logo.png" alt="Site Logo">
+                                </div>
 
-                                        <div class="row">
-                                            <div class="col-md-6 col-sm-12">
-                                                <div class="ec-vendor-detail-block ec-vendor-block-email space-bottom-30">
-                                                    <h6>E-mail address <a href="javasript:void(0)" data-link-action="editmodal" title="Edit Detail" data-bs-toggle="modal" data-bs-target="#edit_modal"><img src="assetsUser/images/icons/edit.svg"
-                                                        class="svg_img pro_svg" alt="edit" /></a></h6>
-                                                    <ul>
-                                                        <li><strong>Email 1 : </strong>support1@exapmle.com</li>
-                                                        <li><strong>Email 2 : </strong>support2@exapmle.com</li>
-                                                    </ul>
+                                <div class="container px-0">
+                                    <div class="row mt-4">
+                                        <div class="col-lg-12">
+                                            <hr class="row brc-default-l1 mx-n1 mb-4" />
+
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <div class="my-2">
+                                                        <span class="text-sm text-grey-m2 align-middle">To : </span>
+                                                        <span class="text-600 text-110 text-blue align-middle">Alex
+                                                            Doe</span>
+                                                    </div>
+                                                    <div class="text-grey-m2">
+                                                        <div class="my-2">
+                                                            123, Mountain View,
+                                                        </div>
+                                                        <div class="my-2">
+                                                            California, US State.
+                                                        </div>
+                                                        <div class="my-2"><b class="text-600">Phone : </b>1234567890
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-md-6 col-sm-12">
-                                                <div class="ec-vendor-detail-block ec-vendor-block-contact space-bottom-30">
-                                                    <h6>Contact nubmer<a href="javasript:void(0)" data-link-action="editmodal" title="Edit Detail" data-bs-toggle="modal" data-bs-target="#edit_modal"><img src="assetsUser/images/icons/edit.svg"
-                                                        class="svg_img pro_svg" alt="edit" /></a></h6>
-                                                    <ul>
-                                                        <li><strong>Phone Nubmer 1 : </strong>(123) 123 456 7890</li>
-                                                        <li><strong>Phone Nubmer 2 : </strong>(123) 123 456 7890</li>
-                                                    </ul>
+                                                <!-- /.col -->
+
+                                                <div
+                                                    class="text-95 col-sm-6 align-self-start d-sm-flex justify-content-end">
+                                                    <hr class="d-sm-none" />
+                                                    <div class="text-grey-m2">
+
+                                                        <div class="my-2"><span class="text-600 text-90">ID : </span>
+                                                            #111-222</div>
+
+                                                        <div class="my-2"><span class="text-600 text-90">HSN Code :
+                                                            </span> #123456</div>
+                                                        <div class="my-2"><span class="text-600 text-90">Issue Date :
+                                                            </span> Oct 12, 2021-2022</div>
+
+                                                        <div class="my-2"><span class="text-600 text-90">Invoice No :
+                                                            </span>6548</div>
+                                                    </div>
                                                 </div>
+                                                <!-- /.col -->
                                             </div>
-                                            <div class="col-md-6 col-sm-12">
-                                                <div class="ec-vendor-detail-block ec-vendor-block-address mar-b-30">
-                                                    <h6>Address<a href="javasript:void(0)" data-link-action="editmodal" title="Edit Detail" data-bs-toggle="modal" data-bs-target="#edit_modal"><img src="assetsUser/images/icons/edit.svg"
-                                                        class="svg_img pro_svg" alt="edit" /></a></h6>
-                                                    <ul>
-                                                        <li><strong>Home : </strong>123, 2150 Sycamore Street, dummy text of
-                                                            the, San Jose, California - 95131.</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6 col-sm-12">
-                                                <div class="ec-vendor-detail-block ec-vendor-block-address">
-                                                    <h6>Shipping Address<a href="javasript:void(0)" data-link-action="editmodal" title="Edit Detail" data-bs-toggle="modal" data-bs-target="#edit_modal"><img src="assetsUser/images/icons/edit.svg"
-                                                        class="svg_img pro_svg" alt="edit" /></a></h6>
-                                                    <ul>
-                                                        <li><strong>Office : </strong>123, 2150 Sycamore Street, dummy text of
-                                                            the, San Jose, California - 95131.</li>
-                                                    </ul>
+
+                                            <div class="mt-4">
+
+                                                <div class="text-95 text-secondary-d3">
+                                                    <div class="ec-vendor-card-table">
+                                                        <table class="table ec-table">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th scope="col">ID</th>
+                                                                    <th scope="col">Name</th>
+                                                                    <th scope="col">Qty</th>
+                                                                    <th scope="col">Price</th>
+                                                                    <th scope="col">Amount</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <th><span>225</span></th>
+                                                                    <td><span>Women sliveless top</span></td>
+                                                                    <td><span>2</span></td>
+                                                                    <td><span>$65</span></td>
+                                                                    <td><span>$130</span></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th><span>548</span></th>
+                                                                    <td><span>Mens cotton fabric shirt</span></td>
+                                                                    <td><span>3</span></td>
+                                                                    <td><span>$10</span></td>
+                                                                    <td><span>$30</span></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th><span>684</span></th>
+                                                                    <td><span>Baby clothes pair</span></td>
+                                                                    <td><span>1</span></td>
+                                                                    <td><span>$360</span></td>
+                                                                    <td><span>$360</span></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th><span>987</span></th>
+                                                                    <td><span>Hand bags for women</span></td>
+                                                                    <td><span>5</span></td>
+                                                                    <td><span>$50</span></td>
+                                                                    <td><span>$250</span></td>
+                                                                </tr>
+                                                            </tbody>
+                                                            <tfoot>
+                                                                <tr>
+                                                                    <td class="border-none" colspan="3">
+                                                                        <span></span></td>
+                                                                    <td class="border-color" colspan="1">
+                                                                        <span><strong>Sub Total</strong></span></td>
+                                                                    <td class="border-color">
+                                                                        <span>$3520</span></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="border-none" colspan="3">
+                                                                        <span></span></td>
+                                                                    <td class="border-color" colspan="1">
+                                                                        <span><strong>Tax (10%)</strong></span></td>
+                                                                    <td class="border-color">
+                                                                        <span>$352</span></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="border-none m-m15"
+                                                                        colspan="3"><span class="note-text-color">Extra
+                                                                            note such as company or payment
+                                                                            information...</span></td>
+                                                                    <td class="border-color m-m15"
+                                                                        colspan="1"><span><strong>Total</strong></span>
+                                                                    </td>
+                                                                    <td class="border-color m-m15">
+                                                                        <span>$3872</span></td>
+                                                                </tr>
+                                                            </tfoot>
+                                                        </table>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -723,7 +793,7 @@
             </div>
         </div>
     </section>
-    <!-- End User profile section -->
+    <!-- End User invoice section -->
 
     <!-- Footer Start -->
     <footer class="ec-footer section-space-mt">
@@ -865,98 +935,6 @@
     </footer>
     <!-- Footer Area End -->
 
-    <!-- Modal -->
-    <div class="modal fade" id="edit_modal" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="ec-vendor-block-img space-bottom-30">
-                            <div class="ec-vendor-block-bg cover-upload">
-                                <div class="thumb-upload">
-                                    <div class="thumb-edit">
-                                        <input type='file' id="thumbUpload01" class="ec-image-upload"
-                                            accept=".png, .jpg, .jpeg" />
-                                        <label><img src="assetsUser/images/icons/edit.svg"
-                                                class="svg_img header_svg" alt="edit" /></label>
-                                    </div>
-                                    <div class="thumb-preview ec-preview">
-                                        <div class="image-thumb-preview">
-                                            <img class="image-thumb-preview ec-image-preview v-img"
-                                                src="assetsUser/images/user/Linda Morgus.jpg" alt="edit" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="ec-vendor-block-detail">
-                                <div class="thumb-upload">
-                                    <div class="thumb-edit">
-                                        <input type='file' id="thumbUpload02" class="ec-image-upload"
-                                            accept=".png, .jpg, .jpeg" />
-                                        <label><img src="assetsUser/images/icons/edit.svg"
-                                                class="svg_img header_svg" alt="edit" /></label>
-                                    </div>
-                                    <div class="thumb-preview ec-preview">
-                                        <div class="image-thumb-preview">
-                                            <img class="image-thumb-preview ec-image-preview v-img"
-                                                src="assetsUser/images/user/Linda Morgus.jpg" alt="edit" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="ec-vendor-upload-detail">
-                                <form class="row g-3">
-                                    <div class="col-md-6 space-t-15">
-                                        <label class="form-label">First name</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <div class="col-md-6 space-t-15">
-                                        <label class="form-label">Last name</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <div class="col-md-12 space-t-15">
-                                        <label class="form-label">Address 1</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <div class="col-md-12 space-t-15">
-                                        <label class="form-label">Address 2</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <div class="col-md-12 space-t-15">
-                                        <label class="form-label">Address 3</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <div class="col-md-6 space-t-15">
-                                        <label class="form-label">Email id 1</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <div class="col-md-6 space-t-15">
-                                        <label class="form-label">Email id 2</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <div class="col-md-6 space-t-15">
-                                        <label class="form-label">Phone number 1</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <div class="col-md-6 space-t-15">
-                                        <label class="form-label">Phone number 2</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <div class="col-md-12 space-t-15">
-                                        <button type="submit" class="btn btn-primary">Update</button>
-                                        <a href="#" class="btn btn-lg btn-secondary qty_close" data-bs-dismiss="modal"
-                                            aria-label="Close">Close</a>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Modal end -->
-
     <!-- Footer navigation panel for responsive display -->
     <div class="ec-nav-toolbar">
         <div class="container">
@@ -987,6 +965,113 @@
         </div>
     </div>
     <!-- Footer navigation panel for responsive display end -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="edit_modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="btn-close qty_close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-5 col-sm-12 col-xs-12">
+                            <!-- Swiper -->
+                            <div class="qty-product-cover">
+                                <div class="qty-slide">
+                                    <img class="img-responsive" src="assetsUser/images/product-image/pro_1/1_1.jpg" alt="">
+                                </div>
+                                <div class="qty-slide">
+                                    <img class="img-responsive" src="assetsUser/images/product-image/pro_1/2_1.jpg" alt="">
+                                </div>
+                                <div class="qty-slide">
+                                    <img class="img-responsive" src="assetsUser/images/product-image/pro_1/3_1.jpg" alt="">
+                                </div>
+                                <div class="qty-slide">
+                                    <img class="img-responsive" src="assetsUser/images/product-image/pro_1/4_1.jpg" alt="">
+                                </div>
+                                <div class="qty-slide">
+                                    <img class="img-responsive" src="assetsUser/images/product-image/pro_1/2_1.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="qty-nav-thumb">
+                                <div class="qty-slide">
+                                    <img class="img-responsive" src="assetsUser/images/product-image/pro_1/1_1.jpg" alt="">
+                                </div>
+                                <div class="qty-slide">
+                                    <img class="img-responsive" src="assetsUser/images/product-image/pro_1/2_1.jpg" alt="">
+                                </div>
+                                <div class="qty-slide">
+                                    <img class="img-responsive" src="assetsUser/images/product-image/pro_1/3_1.jpg" alt="">
+                                </div>
+                                <div class="qty-slide">
+                                    <img class="img-responsive" src="assetsUser/images/product-image/pro_1/4_1.jpg" alt="">
+                                </div>
+                                <div class="qty-slide">
+                                    <img class="img-responsive" src="assetsUser/images/product-image/pro_1/2_1.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-7 col-sm-12 col-xs-12">
+                            <div class="quickview-pro-content">
+                                <h5 class="ec-quick-title"><a href="product-left-sidebar.php">Beautiful Women Dress</a>
+                                </h5>
+                                <div class="ec-quickview-rating">
+                                    <i class="ecicon eci-star fill"></i>
+                                    <i class="ecicon eci-star fill"></i>
+                                    <i class="ecicon eci-star fill"></i>
+                                    <i class="ecicon eci-star fill"></i>
+                                    <i class="ecicon eci-star"></i>
+                                </div>
+
+                                <div class="ec-quickview-desc">Lorem Ipsum is simply dummy text of the printing and
+                                    typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever
+                                    since the 1500s,</div>
+                                <div class="ec-quickview-price">
+                                    <span class="old-price">$100.00</span>
+                                    <span class="new-price">$80.00</span>
+                                </div>
+
+                                <div class="ec-pro-variation">
+                                    <div class="ec-pro-variation-inner ec-pro-variation-color">
+                                        <span>Color</span>
+                                        <div class="ec-pro-color">
+                                            <ul class="ec-opt-swatch">
+                                                <li><span style="background-color:#696d62;"></span></li>
+                                                <li><span style="background-color:#d73808;"></span></li>
+                                                <li><span style="background-color:#577023;"></span></li>
+                                                <li><span style="background-color:#2ea1cd;"></span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="ec-pro-variation-inner ec-pro-variation-size ec-pro-size">
+                                        <span>Size</span>
+                                        <div class="ec-pro-variation-content">
+                                            <ul class="ec-opt-size">
+                                                <li class="active"><a href="#" class="ec-opt-sz"
+                                                        data-tooltip="Small">S</a></li>
+                                                <li><a href="#" class="ec-opt-sz" data-tooltip="Medium">M</a></li>
+                                                <li><a href="#" class="ec-opt-sz" data-tooltip="Large">X</a></li>
+                                                <li><a href="#" class="ec-opt-sz" data-tooltip="Extra Large">XL</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ec-quickview-qty">
+                                    <div class="qty-plus-minus">
+                                        <input class="qty-input" type="text" name="ec_qtybtn" value="1" />
+                                    </div>
+                                    <div class="ec-quickview-cart ">
+                                        <button class="btn btn-primary"><img src="assetsUser/images/icons/cart.svg"
+                                                class="svg_img pro_svg" alt="" /> Add To Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal end -->
 
     <!-- Recent Purchase Popup  -->
     <div class="recent-purchase">

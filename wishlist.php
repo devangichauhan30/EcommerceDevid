@@ -43,8 +43,9 @@
     <link rel="stylesheet" id="bg-switcher-css" href="assetsUser/css/backgrounds/bg-4.css">
     
 </head>
-<body class="shop_page">
+<body class="compare_page">
     <div id="ec-overlay"><span class="loader_img"></span></div>
+
     <!-- Header start  -->
     <header class="ec-header">
         <!--Ec Header Top Start -->
@@ -353,10 +354,10 @@
                                         <li><a href="privacy-policy.php">Privacy Policy</a></li>
                                     </ul>
                                 </li>
-                                
+                              
                                 <li class="dropdown"><a href="blog-full-width.php">Blog</a>
                                 </li>
-                               
+                                
                             </ul>
                         </div>
                     </div>
@@ -603,13 +604,13 @@
                 <div class="col-12">
                     <div class="row ec_breadcrumb_inner">
                         <div class="col-md-6 col-sm-12">
-                            <h2 class="ec-breadcrumb-title">User Profile</h2>
+                            <h2 class="ec-breadcrumb-title">Wishlist</h2>
                         </div>
                         <div class="col-md-6 col-sm-12">
                             <!-- ec-breadcrumb-list start -->
                             <ul class="ec-breadcrumb-list">
                                 <li class="ec-breadcrumb-item"><a href="index.php">Home</a></li>
-                                <li class="ec-breadcrumb-item active">Profile</li>
+                                <li class="ec-breadcrumb-item active">Wishlist</li>
                             </ul>
                             <!-- ec-breadcrumb-list end -->
                         </div>
@@ -620,96 +621,306 @@
     </div>
     <!-- Ec breadcrumb end -->
 
-    <!-- User profile section -->
-    <section class="ec-page-content ec-vendor-uploads ec-user-account section-space-p">
-        <div class="container" >
+    <!-- Ec Wishlist page -->
+    <section class="ec-page-content section-space-p">
+        <div class="container">
             <div class="row">
-                <!-- Sidebar Area Start -->
-                <div class="ec-shop-leftside ec-vendor-sidebar col-lg-3 col-md-12">
-                    <div class="ec-sidebar-wrap">
-                        <!-- Sidebar Category Block -->
-                        <div class="ec-sidebar-block">
-                            <div class="ec-vendor-block">
-                                <!-- <div class="ec-vendor-block-bg"></div>
-                                <div class="ec-vendor-block-detail">
-                                    <img class="v-img" src="assetsUser/images/user/1.jpg" alt="vendor image">
-                                    <h5>Mariana Johns</h5>
-                                </div> -->
-                                <div class="ec-vendor-block-items">
-                                    <ul>
-                                        <li><a href="user-profile.php">User Profile</a></li>
-                                        <li><a href="user-history.php">History</a></li>
-                                        <li><a href="wishlist.php">Wishlist</a></li>
-                                        <li><a href="cart.php">Cart</a></li>
-                                        <li><a href="checkout.php">Checkout</a></li>
-                                        <li><a href="track-order.php">Track Order</a></li>
-                                        <li><a href="user-invoice.php">Invoice</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="ec-shop-rightside col-lg-9 col-md-12">
-                    <div class="ec-vendor-dashboard-card ec-vendor-setting-card">
-                        <div class="ec-vendor-card-body" >
-                            <div class="row" >
-                                <div class="col-md-12" >
-                                    <div class="ec-vendor-block-profile">
-                                        <div class="ec-vendor-block-img space-bottom-30">
-                                            <div class="ec-vendor-block-bg" >
-                                                <a href="#" class="btn btn-lg btn-primary"
-                                                    data-link-action="editmodal" title="Edit Detail"
-                                                    data-bs-toggle="modal" data-bs-target="#edit_modal">Edit Detail</a>
+                <!-- Compare Content Start -->
+                <div class="ec-wish-rightside col-lg-12 col-md-12">
+                    <!-- Compare content Start -->
+                    <div class="ec-compare-content">
+                        <div class="ec-compare-inner">
+                            <div class="row margin-minus-b-30">
+                                
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 mb-6 pro-gl-content">
+                                    <div class="ec-product-inner">
+                                        <div class="ec-pro-image-outer">
+                                            <div class="ec-pro-image">
+                                                <a href="product-left-sidebar.php" class="image">
+                                                    <img class="main-image"
+                                                        src="assetsUser/images/product-image/fullsleevshirt.jpg" alt="Product" />
+                                                    <img class="hover-image"
+                                                        src="assetsUser/images/product-image/fullsleevshirt.jpg" alt="Product" />
+                                                </a>
+                                                <span class="ec-com-remove ec-remove-wish"><a href="javascript:void(0)">×</a></span>
+                                                <span class="percentage">20%</span>
+                                                <a href="#" class="quickview" data-link-action="quickview"
+                                                    title="Quick view" data-bs-toggle="modal"
+                                                    data-bs-target="#ec_quickview_modal"><img
+                                                        src="assetsUser/images/icons/quickview.svg" class="svg_img pro_svg"
+                                                        alt="" /></a>
+                                                <div class="ec-pro-actions">
+                                                    <a href="compare.php" class="ec-btn-group compare"
+                                                        title="Compare"><img src="assetsUser/images/icons/compare.svg"
+                                                            class="svg_img pro_svg" alt="" /></a>
+                                                    <button title="Add To Cart" class=" add-to-cart"><img
+                                                            src="assetsUser/images/icons/cart.svg" class="svg_img pro_svg"
+                                                            alt="" /> Add To Cart</button>
+                                                    <a class="ec-btn-group wishlist" title="Wishlist"><img
+                                                            src="assetsUser/images/icons/wishlist.svg"
+                                                            class="svg_img pro_svg" alt="" /></a>
+                                                </div>
                                             </div>
-                                            <div class="ec-vendor-block-detail">
-                                                <img class="v-img" src="assetsUser/images/user/Linda Morgus.jpg" alt="vendor image">
-                                                <h5 class="name">Mariana Johns</h5>
-                                                <p>( Business Man )</p>
-                                            </div>
-                                            <p>Hello <span>Mariana Johns!</span></p>
-                                            <p>From your account you can easily view and track orders. You can manage and change your account information like address, contact information and history of orders.</p>
                                         </div>
-                                        <h5>Account Information</h5>
-
-                                        <div class="row">
-                                            <div class="col-md-6 col-sm-12">
-                                                <div class="ec-vendor-detail-block ec-vendor-block-email space-bottom-30">
-                                                    <h6>E-mail address <a href="javasript:void(0)" data-link-action="editmodal" title="Edit Detail" data-bs-toggle="modal" data-bs-target="#edit_modal"><img src="assetsUser/images/icons/edit.svg"
-                                                        class="svg_img pro_svg" alt="edit" /></a></h6>
-                                                    <ul>
-                                                        <li><strong>Email 1 : </strong>support1@exapmle.com</li>
-                                                        <li><strong>Email 2 : </strong>support2@exapmle.com</li>
+                                        <div class="ec-pro-content">
+                                            <h5 class="ec-pro-title"><a href="product-left-sidebar.php">Full Sleeve Shirt</a></h5>
+                                            <div class="ec-pro-rating">
+                                                <i class="ecicon eci-star fill"></i>
+                                                <i class="ecicon eci-star fill"></i>
+                                                <i class="ecicon eci-star fill"></i>
+                                                <i class="ecicon eci-star fill"></i>
+                                                <i class="ecicon eci-star"></i>
+                                            </div>
+                                            <div class="ec-pro-list-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dutmmy text ever since the 1500s, when an unknown printer took a galley.</div>
+                                            <span class="ec-price">
+                                                <span class="old-price">$12.00</span>
+                                                <span class="new-price">$10.00</span>
+                                            </span>
+                                            <div class="ec-pro-option">
+                                                <div class="ec-pro-color">
+                                                    <span class="ec-pro-opt-label">Color</span>
+                                                    <ul class="ec-opt-swatch ec-change-img">
+                                                        <li class="active"><a href="#" class="ec-opt-clr-img"
+                                                                data-src="assetsUser/images/product-image/cute.jpg"
+                                                                data-src-hover="assetsUser/images/product-image/fullsleevshirt.jpg"
+                                                                data-tooltip="Gray"><span
+                                                                    style="background-color:#01f1f1;"></span></a></li>
+                                                        <li><a href="#" class="ec-opt-clr-img"
+                                                                data-src="assetsUser/images/product-image/7_2.jpg"
+                                                                data-src-hover="assetsUser/images/product-image/fullsleevshirt.jpg"
+                                                                data-tooltip="Orange"><span
+                                                                    style="background-color:#b89df8;"></span></a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="ec-pro-size">
+                                                    <span class="ec-pro-opt-label">Size</span>
+                                                    <ul class="ec-opt-size">
+                                                        <li class="active"><a href="#" class="ec-opt-sz"
+                                                                data-old="$12.00" data-new="$10.00"
+                                                                data-tooltip="Small">S</a></li>
+                                                        <li><a href="#" class="ec-opt-sz" data-old="$15.00"
+                                                                data-new="$12.00" data-tooltip="Medium">M</a></li>
+                                                        <li><a href="#" class="ec-opt-sz" data-old="$20.00"
+                                                                data-new="$17.00" data-tooltip="Extra Large">XL</a></li>
                                                     </ul>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6 col-sm-12">
-                                                <div class="ec-vendor-detail-block ec-vendor-block-contact space-bottom-30">
-                                                    <h6>Contact nubmer<a href="javasript:void(0)" data-link-action="editmodal" title="Edit Detail" data-bs-toggle="modal" data-bs-target="#edit_modal"><img src="assetsUser/images/icons/edit.svg"
-                                                        class="svg_img pro_svg" alt="edit" /></a></h6>
-                                                    <ul>
-                                                        <li><strong>Phone Nubmer 1 : </strong>(123) 123 456 7890</li>
-                                                        <li><strong>Phone Nubmer 2 : </strong>(123) 123 456 7890</li>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 mb-6 pro-gl-content">
+                                    <div class="ec-product-inner">
+                                        <div class="ec-pro-image-outer">
+                                            <div class="ec-pro-image">
+                                                <a href="product-left-sidebar.php" class="image">
+                                                    <img class="main-image"
+                                                        src="assetsUser/images/product-image/cute.jpg" alt="Product" />
+                                                    <img class="hover-image"
+                                                        src="assetsUser/images/product-image/cute.jpg" alt="Product" />
+                                                </a>
+                                                <span class="ec-com-remove ec-remove-wish"><a href="javascript:void(0)">×</a></span>
+                                                <span class="percentage">20%</span>
+                                                <a href="#" class="quickview" data-link-action="quickview"
+                                                    title="Quick view" data-bs-toggle="modal"
+                                                    data-bs-target="#ec_quickview_modal"><img
+                                                        src="assetsUser/images/icons/quickview.svg" class="svg_img pro_svg"
+                                                        alt="" /></a>
+                                                <div class="ec-pro-actions">
+                                                    <a href="compare.php" class="ec-btn-group compare"
+                                                        title="Compare"><img src="assetsUser/images/icons/compare.svg"
+                                                            class="svg_img pro_svg" alt="" /></a>
+                                                    <button title="Add To Cart" class=" add-to-cart"><img
+                                                            src="assetsUser/images/icons/cart.svg" class="svg_img pro_svg"
+                                                            alt="" /> Add To Cart</button>
+                                                    <a class="ec-btn-group wishlist" title="Wishlist"><img
+                                                            src="assetsUser/images/icons/wishlist.svg"
+                                                            class="svg_img pro_svg" alt="" /></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="ec-pro-content">
+                                            <h5 class="ec-pro-title"><a href="product-left-sidebar.php">Cute Baby Toy's</a></h5>
+                                            <div class="ec-pro-rating">
+                                                <i class="ecicon eci-star fill"></i>
+                                                <i class="ecicon eci-star fill"></i>
+                                                <i class="ecicon eci-star fill"></i>
+                                                <i class="ecicon eci-star fill"></i>
+                                                <i class="ecicon eci-star"></i>
+                                            </div>
+                                            <div class="ec-pro-list-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dutmmy text ever since the 1500s, when an unknown printer took a galley.</div>
+                                            <span class="ec-price">
+                                                <span class="old-price">$40.00</span>
+                                                <span class="new-price">$30.00</span>
+                                            </span>
+                                            <div class="ec-pro-option">
+                                                <div class="ec-pro-color">
+                                                    <span class="ec-pro-opt-label">Color</span>
+                                                    <ul class="ec-opt-swatch ec-change-img">
+                                                        <li class="active"><a href="#" class="ec-opt-clr-img"
+                                                                data-src="assetsUser/images/product-image/cute.jpg"
+                                                                data-src-hover="assetsUser/images/product-image/cute.jpg"
+                                                                data-tooltip="Gray"><span
+                                                                    style="background-color:#90cdf7;"></span></a></li>
+                                                        <li><a href="#" class="ec-opt-clr-img"
+                                                                data-src="assetsUser/images/product-image/cute.jpg"
+                                                                data-src-hover="assetsUser/images/product-image/cute.jpg"
+                                                                data-tooltip="Orange"><span
+                                                                    style="background-color:#ff3b66;"></span></a></li>
+                                                        <li><a href="#" class="ec-opt-clr-img"
+                                                                data-src="assetsUser/images/product-image/cute.jpg"
+                                                                data-src-hover="assetsUser/images/product-image/cute.jpg"
+                                                                data-tooltip="Green"><span
+                                                                    style="background-color:#ffc476;"></span></a></li>
+                                                        <li><a href="#" class="ec-opt-clr-img"
+                                                                data-src="assetsUser/images/product-image/cute.jpg"
+                                                                data-src-hover="assetsUser/images/product-image/cute.jpg"
+                                                                data-tooltip="Sky Blue"><span
+                                                                    style="background-color:#1af0ba;"></span></a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="ec-pro-size">
+                                                    <span class="ec-pro-opt-label">Size</span>
+                                                    <ul class="ec-opt-size">
+                                                        <li class="active"><a href="#" class="ec-opt-sz"
+                                                                data-old="$40.00" data-new="$30.00"
+                                                                data-tooltip="Small">S</a></li>
+                                                        <li><a href="#" class="ec-opt-sz" data-old="$50.00"
+                                                                data-new="$40.00" data-tooltip="Medium">M</a></li>
                                                     </ul>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6 col-sm-12">
-                                                <div class="ec-vendor-detail-block ec-vendor-block-address mar-b-30">
-                                                    <h6>Address<a href="javasript:void(0)" data-link-action="editmodal" title="Edit Detail" data-bs-toggle="modal" data-bs-target="#edit_modal"><img src="assetsUser/images/icons/edit.svg"
-                                                        class="svg_img pro_svg" alt="edit" /></a></h6>
-                                                    <ul>
-                                                        <li><strong>Home : </strong>123, 2150 Sycamore Street, dummy text of
-                                                            the, San Jose, California - 95131.</li>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 mb-6 pro-gl-content">
+                                    <div class="ec-product-inner">
+                                        <div class="ec-pro-image-outer">
+                                            <div class="ec-pro-image">
+                                                <a href="product-left-sidebar.php" class="image">
+                                                    <img class="main-image"
+                                                        src="assetsUser/images/product-image/jumbocurrybag.jpg" alt="Product" />
+                                                    <img class="hover-image"
+                                                        src="assetsUser/images/product-image/jumbocurrybag.jpg" alt="Product" />
+                                                </a>
+                                                <span class="ec-com-remove ec-remove-wish"><a href="javascript:void(0)">×</a></span>
+                                                <span class="percentage">20%</span>
+                                                <a href="#" class="quickview" data-link-action="quickview"
+                                                    title="Quick view" data-bs-toggle="modal"
+                                                    data-bs-target="#ec_quickview_modal"><img
+                                                        src="assetsUser/images/icons/quickview.svg" class="svg_img pro_svg"
+                                                        alt="" /></a>
+                                                <div class="ec-pro-actions">
+                                                    <a href="compare.php" class="ec-btn-group compare"
+                                                        title="Compare"><img src="assetsUser/images/icons/compare.svg"
+                                                            class="svg_img pro_svg" alt="" /></a>
+                                                    <button title="Add To Cart" class=" add-to-cart"><img
+                                                            src="assetsUser/images/icons/cart.svg" class="svg_img pro_svg"
+                                                            alt="" /> Add To Cart</button>
+                                                    <a class="ec-btn-group wishlist" title="Wishlist"><img
+                                                            src="assetsUser/images/icons/wishlist.svg"
+                                                            class="svg_img pro_svg" alt="" /></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="ec-pro-content">
+                                            <h5 class="ec-pro-title"><a href="product-left-sidebar.php">Jumbo Carry Bag</a></h5>
+                                            <div class="ec-pro-rating">
+                                                <i class="ecicon eci-star fill"></i>
+                                                <i class="ecicon eci-star fill"></i>
+                                                <i class="ecicon eci-star fill"></i>
+                                                <i class="ecicon eci-star fill"></i>
+                                                <i class="ecicon eci-star"></i>
+                                            </div>
+                                            <div class="ec-pro-list-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dutmmy text ever since the 1500s, when an unknown printer took a galley.</div>
+                                            <span class="ec-price">
+                                                <span class="old-price">$50.00</span>
+                                                <span class="new-price">$40.00</span>
+                                            </span>                                                
+                                            <div class="ec-pro-option">
+                                                <div class="ec-pro-color">
+                                                    <span class="ec-pro-opt-label">Color</span>
+                                                    <ul class="ec-opt-swatch ec-change-img">
+                                                        <li class="active"><a href="#" class="ec-opt-clr-img"
+                                                                data-src="assetsUser/images/product-image/jumbocurrybag.jpg"
+                                                                data-src-hover="assetsUser/images/product-image/jumbocurrybag.jpg"
+                                                                data-tooltip="Gray"><span
+                                                                    style="background-color:#fdbf04;"></span></a></li>
                                                     </ul>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6 col-sm-12">
-                                                <div class="ec-vendor-detail-block ec-vendor-block-address">
-                                                    <h6>Shipping Address<a href="javasript:void(0)" data-link-action="editmodal" title="Edit Detail" data-bs-toggle="modal" data-bs-target="#edit_modal"><img src="assetsUser/images/icons/edit.svg"
-                                                        class="svg_img pro_svg" alt="edit" /></a></h6>
-                                                    <ul>
-                                                        <li><strong>Office : </strong>123, 2150 Sycamore Street, dummy text of
-                                                            the, San Jose, California - 95131.</li>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 mb-6 pro-gl-content">
+                                    <div class="ec-product-inner">
+                                        <div class="ec-pro-image-outer">
+                                            <div class="ec-pro-image">
+                                                <a href="product-left-sidebar.php" class="image">
+                                                    <img class="main-image"
+                                                        src="assetsUser/images/product-image/digitalsmartwatch.jpg" alt="Product" />
+                                                    <img class="hover-image"
+                                                        src="assetsUser/images/product-image/digitalsmartwatch.jpg" alt="Product" />
+                                                </a>
+                                                <span class="ec-com-remove ec-remove-wish"><a href="javascript:void(0)">×</a></span>
+                                                <span class="percentage">20%</span>
+                                                <a href="#" class="quickview" data-link-action="quickview"
+                                                    title="Quick view" data-bs-toggle="modal"
+                                                    data-bs-target="#ec_quickview_modal"><img
+                                                        src="assetsUser/images/icons/quickview.svg" class="svg_img pro_svg"
+                                                        alt="" /></a>
+                                                <div class="ec-pro-actions">
+                                                    <a href="compare.php" class="ec-btn-group compare"
+                                                        title="Compare"><img src="assetsUser/images/icons/compare.svg"
+                                                            class="svg_img pro_svg" alt="" /></a>
+                                                    <button title="Add To Cart" class=" add-to-cart"><img
+                                                            src="assetsUser/images/icons/cart.svg" class="svg_img pro_svg"
+                                                            alt="" /> Add To Cart</button>
+                                                    <a class="ec-btn-group wishlist" title="Wishlist"><img
+                                                            src="assetsUser/images/icons/wishlist.svg"
+                                                            class="svg_img pro_svg" alt="" /></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="ec-pro-content">
+                                            <h5 class="ec-pro-title"><a href="product-left-sidebar.php">I smart watch 6gb</a></h5>
+                                            <div class="ec-pro-rating">
+                                                <i class="ecicon eci-star fill"></i>
+                                                <i class="ecicon eci-star fill"></i>
+                                                <i class="ecicon eci-star fill"></i>
+                                                <i class="ecicon eci-star fill"></i>
+                                                <i class="ecicon eci-star"></i>
+                                            </div>
+                                            <div class="ec-pro-list-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dutmmy text ever since the 1500s, when an unknown printer took a galley.</div>
+                                            <span class="ec-price">
+                                                <span class="old-price">$12.00</span>
+                                                <span class="new-price">$10.00</span>
+                                            </span>
+                                            <div class="ec-pro-option">
+                                                <div class="ec-pro-color">
+                                                    <span class="ec-pro-opt-label">Color</span>
+                                                    <ul class="ec-opt-swatch ec-change-img">
+                                                        <li class="active"><a href="#" class="ec-opt-clr-img"
+                                                                data-src="assetsUser/images/product-image/digitalsmartwatch.jpg"
+                                                                data-src-hover="assetsUser/images/product-image/digitalsmartwatch.jpg"
+                                                                data-tooltip="Gray"><span
+                                                                    style="background-color:#e2e2e2;"></span></a></li>
+                                                        <li><a href="#" class="ec-opt-clr-img"
+                                                                data-src="assetsUser/images/product-image/digitalsmartwatch.jpg"
+                                                                data-src-hover="assetsUser/images/product-image/digitalsmartwatch.jpg"
+                                                                data-tooltip="Orange"><span
+                                                                    style="background-color:#ffcef7;"></span></a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="ec-pro-size">
+                                                    <span class="ec-pro-opt-label">Size</span>
+                                                    <ul class="ec-opt-size">
+                                                        <li class="active"><a href="#" class="ec-opt-sz"
+                                                                data-old="$12.00" data-new="$10.00"
+                                                                data-tooltip="Small">S</a></li>
+                                                        <li><a href="#" class="ec-opt-sz" data-old="$15.00"
+                                                                data-new="$12.00" data-tooltip="Medium">M</a></li>
+                                                        <li><a href="#" class="ec-opt-sz" data-old="$20.00"
+                                                                data-new="$17.00" data-tooltip="Extra Large">XL</a></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -719,11 +930,12 @@
                             </div>
                         </div>
                     </div>
+                    <!--compare content End -->
                 </div>
+                <!-- Compare Content end -->
             </div>
         </div>
     </section>
-    <!-- End User profile section -->
 
     <!-- Footer Start -->
     <footer class="ec-footer section-space-mt">
@@ -866,88 +1078,103 @@
     <!-- Footer Area End -->
 
     <!-- Modal -->
-    <div class="modal fade" id="edit_modal" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
+    <div class="modal fade" id="ec_quickview_modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
+                <button type="button" class="btn-close qty_close" data-bs-dismiss="modal" aria-label="Close"></button>
                 <div class="modal-body">
                     <div class="row">
-                        <div class="ec-vendor-block-img space-bottom-30">
-                            <div class="ec-vendor-block-bg cover-upload">
-                                <div class="thumb-upload">
-                                    <div class="thumb-edit">
-                                        <input type='file' id="thumbUpload01" class="ec-image-upload"
-                                            accept=".png, .jpg, .jpeg" />
-                                        <label><img src="assetsUser/images/icons/edit.svg"
-                                                class="svg_img header_svg" alt="edit" /></label>
+                        <div class="col-md-5 col-sm-12 col-xs-12">
+                            <!-- Swiper -->
+                            <div class="qty-product-cover">
+                                <div class="qty-slide">
+                                    <img class="img-responsive" src="assetsUser/images/product-image/digitalsmartwatch.jpg" alt="">
+                                </div>
+                                <div class="qty-slide">
+                                    <img class="img-responsive" src="assetsUser/images/product-image/digitalsmartwatch.jpg" alt="">
+                                </div>
+                                <div class="qty-slide">
+                                    <img class="img-responsive" src="assetsUser/images/product-image/digitalsmartwatch.jpg" alt="">
+                                </div>
+                                <div class="qty-slide">
+                                    <img class="img-responsive" src="assetsUser/images/product-image/digitalsmartwatch.jpg" alt="">
+                                </div>
+                                <div class="qty-slide">
+                                    <img class="img-responsive" src="assetsUser/images/product-image/digitalsmartwatch.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="qty-nav-thumb">
+                                <div class="qty-slide">
+                                    <img class="img-responsive" src="assetsUser/images/product-image/digitalsmartwatch.jpg" alt="">
+                                </div>
+                                <div class="qty-slide">
+                                    <img class="img-responsive" src="assetsUser/images/product-image/digitalsmartwatch.jpg" alt="">
+                                </div>
+                                <div class="qty-slide">
+                                    <img class="img-responsive" src="assetsUser/images/product-image/digitalsmartwatch.jpg" alt="">
+                                </div>
+                                <div class="qty-slide">
+                                    <img class="img-responsive" src="assetsUser/images/product-image/digitalsmartwatch.jpg" alt="">
+                                </div>
+                                <div class="qty-slide">
+                                    <img class="img-responsive" src="assetsUser/images/product-image/digitalsmartwatch.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-7 col-sm-12 col-xs-12">
+                            <div class="quickview-pro-content">
+                                <h5 class="ec-quick-title"><a href="product-left-sidebar.php">Handbag leather purse for women</a>
+                                </h5>
+                                <div class="ec-quickview-rating">
+                                    <i class="ecicon eci-star fill"></i>
+                                    <i class="ecicon eci-star fill"></i>
+                                    <i class="ecicon eci-star fill"></i>
+                                    <i class="ecicon eci-star fill"></i>
+                                    <i class="ecicon eci-star"></i>
+                                </div>
+
+                                <div class="ec-quickview-desc">Lorem Ipsum is simply dummy text of the printing and
+                                    typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever
+                                    since the 1500s,</div>
+                                <div class="ec-quickview-price">
+                                    <span class="old-price">$100.00</span>
+                                    <span class="new-price">$80.00</span>
+                                </div>
+
+                                <div class="ec-pro-variation">
+                                    <div class="ec-pro-variation-inner ec-pro-variation-color">
+                                        <span>Color</span>
+                                        <div class="ec-pro-color">
+                                            <ul class="ec-opt-swatch">
+                                                <li><span style="background-color:#696d62;"></span></li>
+                                                <li><span style="background-color:#d73808;"></span></li>
+                                                <li><span style="background-color:#577023;"></span></li>
+                                                <li><span style="background-color:#2ea1cd;"></span></li>
+                                            </ul>
+                                        </div>
                                     </div>
-                                    <div class="thumb-preview ec-preview">
-                                        <div class="image-thumb-preview">
-                                            <img class="image-thumb-preview ec-image-preview v-img"
-                                                src="assetsUser/images/user/Linda Morgus.jpg" alt="edit" />
+                                    <div class="ec-pro-variation-inner ec-pro-variation-size ec-pro-size">
+                                        <span>Size</span>
+                                        <div class="ec-pro-variation-content">
+                                            <ul class="ec-opt-size">
+                                                <li class="active"><a href="#" class="ec-opt-sz"
+                                                        data-tooltip="Small">S</a></li>
+                                                <li><a href="#" class="ec-opt-sz" data-tooltip="Medium">M</a></li>
+                                                <li><a href="#" class="ec-opt-sz" data-tooltip="Large">X</a></li>
+                                                <li><a href="#" class="ec-opt-sz" data-tooltip="Extra Large">XL</a></li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="ec-vendor-block-detail">
-                                <div class="thumb-upload">
-                                    <div class="thumb-edit">
-                                        <input type='file' id="thumbUpload02" class="ec-image-upload"
-                                            accept=".png, .jpg, .jpeg" />
-                                        <label><img src="assetsUser/images/icons/edit.svg"
-                                                class="svg_img header_svg" alt="edit" /></label>
+                                <div class="ec-quickview-qty">
+                                    <div class="qty-plus-minus">
+                                        <input class="qty-input" type="text" name="ec_qtybtn" value="1" />
                                     </div>
-                                    <div class="thumb-preview ec-preview">
-                                        <div class="image-thumb-preview">
-                                            <img class="image-thumb-preview ec-image-preview v-img"
-                                                src="assetsUser/images/user/Linda Morgus.jpg" alt="edit" />
-                                        </div>
+                                    <div class="ec-quickview-cart ">
+                                        <button class="btn btn-primary"><img src="assetsUser/images/icons/cart.svg"
+                                                class="svg_img pro_svg" alt="" /> Add To Cart</button>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="ec-vendor-upload-detail">
-                                <form class="row g-3">
-                                    <div class="col-md-6 space-t-15">
-                                        <label class="form-label">First name</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <div class="col-md-6 space-t-15">
-                                        <label class="form-label">Last name</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <div class="col-md-12 space-t-15">
-                                        <label class="form-label">Address 1</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <div class="col-md-12 space-t-15">
-                                        <label class="form-label">Address 2</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <div class="col-md-12 space-t-15">
-                                        <label class="form-label">Address 3</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <div class="col-md-6 space-t-15">
-                                        <label class="form-label">Email id 1</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <div class="col-md-6 space-t-15">
-                                        <label class="form-label">Email id 2</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <div class="col-md-6 space-t-15">
-                                        <label class="form-label">Phone number 1</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <div class="col-md-6 space-t-15">
-                                        <label class="form-label">Phone number 2</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <div class="col-md-12 space-t-15">
-                                        <button type="submit" class="btn btn-primary">Update</button>
-                                        <a href="#" class="btn btn-lg btn-secondary qty_close" data-bs-dismiss="modal"
-                                            aria-label="Close">Close</a>
-                                    </div>
-                                </form>
                             </div>
                         </div>
                     </div>
@@ -956,7 +1183,7 @@
         </div>
     </div>
     <!-- Modal end -->
-
+    
     <!-- Footer navigation panel for responsive display -->
     <div class="ec-nav-toolbar">
         <div class="container">
@@ -1210,19 +1437,17 @@
     <script src="assetsUser/js/vendor/jquery-3.5.1.min.js"></script>
     <script src="assetsUser/js/vendor/popper.min.js"></script>
     <script src="assetsUser/js/vendor/bootstrap.min.js"></script>
-    <script src="assetsUser/js/vendor/bootstrap-tagsinput.js"></script>
     <script src="assetsUser/js/vendor/jquery-migrate-3.3.0.min.js"></script>
     <script src="assetsUser/js/vendor/modernizr-3.11.2.min.js"></script>
-    <script src="assetsUser/js/vendor/jquery.magnific-popup.min.js"></script>
 
     <!--Plugins JS-->
     <script src="assetsUser/js/plugins/swiper-bundle.min.js"></script>
-    <script src="assetsUser/js/plugins/nouislider.js"></script>
     <script src="assetsUser/js/plugins/countdownTimer.min.js"></script>
     <script src="assetsUser/js/plugins/scrollup.js"></script>
     <script src="assetsUser/js/plugins/jquery.zoom.min.js"></script>
     <script src="assetsUser/js/plugins/slick.min.js"></script>
     <script src="assetsUser/js/plugins/infiniteslidev2.js"></script>
+    <script src="assetsUser/js/vendor/jquery.magnific-popup.min.js"></script>
     <script src="assetsUser/js/plugins/jquery.sticky-sidebar.js"></script>
     <!-- Google translate Js -->
     <script src="assetsUser/js/vendor/google-translate.js"></script>
@@ -1232,6 +1457,7 @@
         }
     </script>
     <!-- Main Js -->
+    <script src="assetsUser/js/vendor/index.js"></script>
     <script src="assetsUser/js/main.js"></script>
 
 </body>

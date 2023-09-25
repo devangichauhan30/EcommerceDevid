@@ -45,6 +45,7 @@
 </head>
 <body class="shop_page">
     <div id="ec-overlay"><span class="loader_img"></span></div>
+
     <!-- Header start  -->
     <header class="ec-header">
         <!--Ec Header Top Start -->
@@ -356,7 +357,7 @@
                                 
                                 <li class="dropdown"><a href="blog-full-width.php">Blog</a>
                                 </li>
-                               
+                                
                             </ul>
                         </div>
                     </div>
@@ -603,13 +604,13 @@
                 <div class="col-12">
                     <div class="row ec_breadcrumb_inner">
                         <div class="col-md-6 col-sm-12">
-                            <h2 class="ec-breadcrumb-title">User Profile</h2>
+                            <h2 class="ec-breadcrumb-title">User History</h2>
                         </div>
                         <div class="col-md-6 col-sm-12">
                             <!-- ec-breadcrumb-list start -->
                             <ul class="ec-breadcrumb-list">
                                 <li class="ec-breadcrumb-item"><a href="index.php">Home</a></li>
-                                <li class="ec-breadcrumb-item active">Profile</li>
+                                <li class="ec-breadcrumb-item active">History</li>
                             </ul>
                             <!-- ec-breadcrumb-list end -->
                         </div>
@@ -620,9 +621,9 @@
     </div>
     <!-- Ec breadcrumb end -->
 
-    <!-- User profile section -->
+    <!-- User history section -->
     <section class="ec-page-content ec-vendor-uploads ec-user-account section-space-p">
-        <div class="container" >
+        <div class="container">
             <div class="row">
                 <!-- Sidebar Area Start -->
                 <div class="ec-shop-leftside ec-vendor-sidebar col-lg-3 col-md-12">
@@ -630,11 +631,6 @@
                         <!-- Sidebar Category Block -->
                         <div class="ec-sidebar-block">
                             <div class="ec-vendor-block">
-                                <!-- <div class="ec-vendor-block-bg"></div>
-                                <div class="ec-vendor-block-detail">
-                                    <img class="v-img" src="assetsUser/images/user/1.jpg" alt="vendor image">
-                                    <h5>Mariana Johns</h5>
-                                </div> -->
                                 <div class="ec-vendor-block-items">
                                     <ul>
                                         <li><a href="user-profile.php">User Profile</a></li>
@@ -651,71 +647,107 @@
                     </div>
                 </div>
                 <div class="ec-shop-rightside col-lg-9 col-md-12">
-                    <div class="ec-vendor-dashboard-card ec-vendor-setting-card">
-                        <div class="ec-vendor-card-body" >
-                            <div class="row" >
-                                <div class="col-md-12" >
-                                    <div class="ec-vendor-block-profile">
-                                        <div class="ec-vendor-block-img space-bottom-30">
-                                            <div class="ec-vendor-block-bg" >
-                                                <a href="#" class="btn btn-lg btn-primary"
-                                                    data-link-action="editmodal" title="Edit Detail"
-                                                    data-bs-toggle="modal" data-bs-target="#edit_modal">Edit Detail</a>
-                                            </div>
-                                            <div class="ec-vendor-block-detail">
-                                                <img class="v-img" src="assetsUser/images/user/Linda Morgus.jpg" alt="vendor image">
-                                                <h5 class="name">Mariana Johns</h5>
-                                                <p>( Business Man )</p>
-                                            </div>
-                                            <p>Hello <span>Mariana Johns!</span></p>
-                                            <p>From your account you can easily view and track orders. You can manage and change your account information like address, contact information and history of orders.</p>
-                                        </div>
-                                        <h5>Account Information</h5>
-
-                                        <div class="row">
-                                            <div class="col-md-6 col-sm-12">
-                                                <div class="ec-vendor-detail-block ec-vendor-block-email space-bottom-30">
-                                                    <h6>E-mail address <a href="javasript:void(0)" data-link-action="editmodal" title="Edit Detail" data-bs-toggle="modal" data-bs-target="#edit_modal"><img src="assetsUser/images/icons/edit.svg"
-                                                        class="svg_img pro_svg" alt="edit" /></a></h6>
-                                                    <ul>
-                                                        <li><strong>Email 1 : </strong>support1@exapmle.com</li>
-                                                        <li><strong>Email 2 : </strong>support2@exapmle.com</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6 col-sm-12">
-                                                <div class="ec-vendor-detail-block ec-vendor-block-contact space-bottom-30">
-                                                    <h6>Contact nubmer<a href="javasript:void(0)" data-link-action="editmodal" title="Edit Detail" data-bs-toggle="modal" data-bs-target="#edit_modal"><img src="assetsUser/images/icons/edit.svg"
-                                                        class="svg_img pro_svg" alt="edit" /></a></h6>
-                                                    <ul>
-                                                        <li><strong>Phone Nubmer 1 : </strong>(123) 123 456 7890</li>
-                                                        <li><strong>Phone Nubmer 2 : </strong>(123) 123 456 7890</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6 col-sm-12">
-                                                <div class="ec-vendor-detail-block ec-vendor-block-address mar-b-30">
-                                                    <h6>Address<a href="javasript:void(0)" data-link-action="editmodal" title="Edit Detail" data-bs-toggle="modal" data-bs-target="#edit_modal"><img src="assetsUser/images/icons/edit.svg"
-                                                        class="svg_img pro_svg" alt="edit" /></a></h6>
-                                                    <ul>
-                                                        <li><strong>Home : </strong>123, 2150 Sycamore Street, dummy text of
-                                                            the, San Jose, California - 95131.</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6 col-sm-12">
-                                                <div class="ec-vendor-detail-block ec-vendor-block-address">
-                                                    <h6>Shipping Address<a href="javasript:void(0)" data-link-action="editmodal" title="Edit Detail" data-bs-toggle="modal" data-bs-target="#edit_modal"><img src="assetsUser/images/icons/edit.svg"
-                                                        class="svg_img pro_svg" alt="edit" /></a></h6>
-                                                    <ul>
-                                                        <li><strong>Office : </strong>123, 2150 Sycamore Street, dummy text of
-                                                            the, San Jose, California - 95131.</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                    <div class="ec-vendor-dashboard-card">
+                        <div class="ec-vendor-card-header">
+                            <h5>Product History</h5>
+                            <div class="ec-header-btn">
+                                <a class="btn btn-lg btn-primary" href="#">Shop Now</a>
+                            </div>
+                        </div>
+                        <div class="ec-vendor-card-body">
+                            <div class="ec-vendor-card-table">
+                                <table class="table ec-table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">ID</th>
+                                            <th scope="col">Image</th>
+                                            <th scope="col">Name</th>
+                                            <th scope="col">Date</th>
+                                            <th scope="col">Price</th>
+                                            <th scope="col">Status</th>
+                                            <th scope="col">Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row"><span>225</span></th>
+                                            <td><img class="prod-img" src="assetsUser/images/product-image/ClasicBabyShoes.jpg"
+                                                    alt="product image"></td>
+                                            <td><span>Stylish baby shoes</span></td>
+                                            <td><span>16 Jul 2021</span></td>
+                                            <td><span>$65</span></td>
+                                            <td><span>Active</span></td>
+                                            <td><span class="tbl-btn"><a class="btn btn-lg btn-primary"
+                                                        href="#">View</a></span></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><span>548</span></th>
+                                            <td><img class="prod-img" src="assetsUser/images/product-image/Full sleeve cap hoodies.jpg"
+                                                    alt="product image"></td>
+                                            <td><span>Sweat Pullover Hoodie</span></td>
+                                            <td><span>13 Aug 2016</span></td>
+                                            <td><span>$68</span></td>
+                                            <td><span>On Hold</span></td>
+                                            <td><span class="tbl-btn"><a class="btn btn-lg btn-primary"
+                                                        href="#">View</a></span></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><span>684</span></th>
+                                            <td><img class="prod-img" src="assetsUser/images/product-image/roundnecktshirt.jpg"
+                                                    alt="product image"></td>
+                                            <td><span>T-shirt for girl</span></td>
+                                            <td><span>20 Jul 2015</span></td>
+                                            <td><span>$360</span></td>
+                                            <td><span>On Hold</span></td>
+                                            <td><span class="tbl-btn"><a class="btn btn-lg btn-primary"
+                                                        href="#">View</a></span></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><span>987</span></th>
+                                            <td><img class="prod-img" src="assetsUser/images/product-image/canvas cowboy hat.jpg"
+                                                    alt="product image"></td>
+                                            <td><span>Wool hat for men</span></td>
+                                            <td><span>05 Feb 2014</span></td>
+                                            <td><span>$584</span></td>
+                                            <td><span>On Hold</span></td>
+                                            <td><span class="tbl-btn"><a class="btn btn-lg btn-primary"
+                                                        href="#">View</a></span></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><span>225</span></th>
+                                            <td><img class="prod-img" src="assetsUser/images/product-image/designer leather purses.jpg"
+                                                    alt="product image"></td>
+                                            <td><span>Women leather purse</span></td>
+                                            <td><span>23 Jul 2013</span></td>
+                                            <td><span>$65</span></td>
+                                            <td><span>On Hold</span></td>
+                                            <td><span class="tbl-btn"><a class="btn btn-lg btn-primary"
+                                                        href="#">View</a></span></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><span>548</span></th>
+                                            <td><img class="prod-img" src="assetsUser/images/product-image/BabyDoctorToyKit.jpg"
+                                                    alt="product image"></td>
+                                            <td><span>Doctor kit toy</span></td>
+                                            <td><span>28 Mar 2011</span></td>
+                                            <td><span>$68</span></td>
+                                            <td><span>Disabled</span></td>
+                                            <td><span class="tbl-btn"><a class="btn btn-lg btn-primary"
+                                                        href="#">View</a></span></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><span>684</span></th>
+                                            <td><img class="prod-img" src="assetsUser/images/product-image/bebytoytedtbear1.jpg"
+                                                    alt="product image"></td>
+                                            <td><span>Teddy bear for baby</span></td>
+                                            <td><span>16 Apr 2010</span></td>
+                                            <td><span>$360</span></td>
+                                            <td><span>On Hold</span></td>
+                                            <td><span class="tbl-btn"><a class="btn btn-lg btn-primary"
+                                                        href="#">View</a></span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
@@ -723,7 +755,7 @@
             </div>
         </div>
     </section>
-    <!-- End User profile section -->
+    <!-- End User history section -->
 
     <!-- Footer Start -->
     <footer class="ec-footer section-space-mt">
@@ -864,98 +896,6 @@
         </div>
     </footer>
     <!-- Footer Area End -->
-
-    <!-- Modal -->
-    <div class="modal fade" id="edit_modal" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="ec-vendor-block-img space-bottom-30">
-                            <div class="ec-vendor-block-bg cover-upload">
-                                <div class="thumb-upload">
-                                    <div class="thumb-edit">
-                                        <input type='file' id="thumbUpload01" class="ec-image-upload"
-                                            accept=".png, .jpg, .jpeg" />
-                                        <label><img src="assetsUser/images/icons/edit.svg"
-                                                class="svg_img header_svg" alt="edit" /></label>
-                                    </div>
-                                    <div class="thumb-preview ec-preview">
-                                        <div class="image-thumb-preview">
-                                            <img class="image-thumb-preview ec-image-preview v-img"
-                                                src="assetsUser/images/user/Linda Morgus.jpg" alt="edit" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="ec-vendor-block-detail">
-                                <div class="thumb-upload">
-                                    <div class="thumb-edit">
-                                        <input type='file' id="thumbUpload02" class="ec-image-upload"
-                                            accept=".png, .jpg, .jpeg" />
-                                        <label><img src="assetsUser/images/icons/edit.svg"
-                                                class="svg_img header_svg" alt="edit" /></label>
-                                    </div>
-                                    <div class="thumb-preview ec-preview">
-                                        <div class="image-thumb-preview">
-                                            <img class="image-thumb-preview ec-image-preview v-img"
-                                                src="assetsUser/images/user/Linda Morgus.jpg" alt="edit" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="ec-vendor-upload-detail">
-                                <form class="row g-3">
-                                    <div class="col-md-6 space-t-15">
-                                        <label class="form-label">First name</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <div class="col-md-6 space-t-15">
-                                        <label class="form-label">Last name</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <div class="col-md-12 space-t-15">
-                                        <label class="form-label">Address 1</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <div class="col-md-12 space-t-15">
-                                        <label class="form-label">Address 2</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <div class="col-md-12 space-t-15">
-                                        <label class="form-label">Address 3</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <div class="col-md-6 space-t-15">
-                                        <label class="form-label">Email id 1</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <div class="col-md-6 space-t-15">
-                                        <label class="form-label">Email id 2</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <div class="col-md-6 space-t-15">
-                                        <label class="form-label">Phone number 1</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <div class="col-md-6 space-t-15">
-                                        <label class="form-label">Phone number 2</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <div class="col-md-12 space-t-15">
-                                        <button type="submit" class="btn btn-primary">Update</button>
-                                        <a href="#" class="btn btn-lg btn-secondary qty_close" data-bs-dismiss="modal"
-                                            aria-label="Close">Close</a>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Modal end -->
 
     <!-- Footer navigation panel for responsive display -->
     <div class="ec-nav-toolbar">
@@ -1235,4 +1175,5 @@
     <script src="assetsUser/js/main.js"></script>
 
 </body>
+
 </html>
